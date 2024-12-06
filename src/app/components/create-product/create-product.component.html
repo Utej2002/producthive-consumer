@@ -1,0 +1,67 @@
+<div>
+    <br />
+    <div class="container form-container">
+      <div class="row justify-content-center">
+        <div class="form-outline mb-4"  style="width:500px;">
+          <h1 class="text-center">{{ getTitle() }}</h1>
+          <div class="card-body">
+            <form (ngSubmit)="saveOrUpdateProduct()" ngNativeValidate>
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Product Name"
+                  class="form-control"
+                  [(ngModel)]="name"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="brand">Brand:</label>
+                <input
+                  type="text"
+                  id="brand"
+                  placeholder="Product Brand"
+                  class="form-control"
+                  [(ngModel)]="brand"
+                  name="brand"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="model">Made In:</label>
+                <input
+                  type="text"
+                  id="model"
+                  placeholder="Made In"
+                  class="form-control"
+                  [(ngModel)]="model"
+                  name="model"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="price">Price:</label>
+                <input
+                  type="text"
+                  id="price"
+                  placeholder="Price"
+                  class="form-control"
+                  [(ngModel)]="price"
+                  name="price"
+                  required
+                />
+              </div>
+  
+              <button type="submit" class="btn btn-success">Save</button>
+              <button type="button" class="btn btn-danger" (click)="cancel()" style="margin-left: 10px;">Cancel</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+

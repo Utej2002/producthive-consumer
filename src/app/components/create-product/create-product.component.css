@@ -1,0 +1,25 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Centers the container vertically on the page */
+    background-color: #f0f0f5; /* Set background color for the form container */
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center; /* Centers the row content horizontally */
+  }
+  
+  h1 {
+    text-align: center;
+    color: red; /* Set h1 text color to red */
+  }
+  
+  .form-outline {
+    background-color: #ffffff; /* White background for the form */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds some visual styling to the form */
+  }
+  

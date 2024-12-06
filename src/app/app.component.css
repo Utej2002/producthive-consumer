@@ -1,0 +1,71 @@
+  /* Flexbox container for the app */
+  .app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Header styles */
+  .app-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #282c34;
+    padding: 20px;
+    color: white;
+  }
+  
+  .app-logo {
+    height: 75px;
+  }
+  
+  .app-header h1 {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+    /* font-size: 2rem; */
+    font-size: 36px;
+    font-weight: bold;
+    font-family: Montserrat, sans-serif;
+    color:white;
+    text-shadow: 0 2px 4px goldenrod;
+    margin-bottom: 20px;
+  }
+  /* Section styles */
+section {
+    flex-grow: 1;
+    padding: 20px;
+    
+
+  }
+  
+  /* Section background responsive and auto height */
+  section div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: auto;
+    width: 100%;
+    
+  }
+  
+  /* Footer styles */
+  .footer {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    font-weight: bolder;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
